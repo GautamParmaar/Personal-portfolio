@@ -1,63 +1,85 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import { AiFillGithub, AiOutlineTwitter, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import Slide from "react-reveal/Slide";
+import { Container, Grid, Typography, Box } from "@mui/material";
 
 
 function Home2() {
   return (
-    <Container style={{backgroundColor:'rgba(237,249,254,255)'}} fluid className="home-about-section" id="about">
-      <Container>
-        <Row>
-          <Col md={8} className="home-about-description">
-            <Slide left>
-              <h1 style={{ fontSize: "2.6em", color: 'black' }}>
-                LET ME <span className="purple"> INTRODUCE </span> MYSELF
-              </h1>
-              <p className="home-about-body color">
-                I fell in love with programming and I have at least learnt something, I think… 🤷‍♂️
-                <br />
-                <br />I am fluent in classics like
-                <i>
-                  <b className="purple"> C++, Javascript and Go. </b>
-                </i>
-                <br />
-                <br />
-                My field of Interest's are building new &nbsp;
-                <i>
-                  <b className="purple">Web Technologies and Products </b> and
-                  also in areas related to <b className="purple">Blockchain.</b>
-                </i>
-                <br />
-                <br />
-                Whenever possible, I also apply my passion for developing products
-                with <b className="purple">Node.js</b> and
-                <i>
-                  <b className="purple"> Modern Javascript Library and Frameworks </b>
-                </i>
-                &nbsp; like
-                <i>
-                  <b className="purple"> React.js and Next.js</b>
-                </i>
-              </p>
-            </Slide>
-          </Col>
-          <Col md={4} className="myAvtar">
-            <Slide right>
-              <Tilt>
-                <img src={myImg} className="img-fluid" alt="avatar" />
-              </Tilt>
-            </Slide>
-          </Col>
-        </Row>
-        <Row>
-         
-        </Row>
-      </Container>
-    </Container>
+    <>
+     <Box sx={{ backgroundColor: 'rgba(237,249,254,255)', padding: '2rem' }}>
+        <Typography
+          variant="h1"
+          align="center"
+          sx={{ fontSize: { xs: '2.5rem', md: '4rem' }, fontWeight: 'bold', fontFamily: 'Caveat, cursive', marginBottom: '2rem' }}
+        >
+          What I Do?
+        </Typography>
+
+        <Grid container alignItems="flex-start" spacing={2}>
+          <Grid item xs={12} md={5} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <img 
+              src="/WID.png"
+              alt="Avatar" 
+              style={{ 
+                width: '100%', 
+                maxWidth: '500px', 
+                height: 'auto', 
+                marginLeft: { xs: '0', md: '20px' } // Adjusted to add space on larger screens
+              }} 
+            />
+          </Grid>
+
+          <Grid item xs={12} md={7}>
+            <Box sx={{ marginLeft: { xs: '0', md: '40px' }, textAlign: { xs: 'center', md: 'left' } }}>
+              <Typography
+                variant="h3"
+                sx={{ 
+                  fontSize: { xs: '2rem', md: '2.5rem' }, 
+                  fontWeight: 'bold', 
+                  fontFamily: 'Roboto, sans-serif', 
+                  marginBottom: '1rem' 
+                }}
+              >
+                Full Stack Development
+              </Typography>
+
+              <Typography 
+                sx={{ 
+                  fontFamily: 'Open Sans, sans-serif', 
+                  fontSize: '1.2rem', 
+                  marginBottom: '0.5rem', 
+                  textAlign: { xs: 'center', md: 'left' }
+                }}
+              >
+                ⚡ Building responsive website front end using React-Redux
+              </Typography>
+              <Typography 
+                sx={{ 
+                  fontFamily: 'Open Sans, sans-serif', 
+                  fontSize: '1.2rem', 
+                  marginBottom: '0.5rem', 
+                  textAlign: { xs: 'center', md: 'left' }
+                }}
+              >
+                ⚡ Developing mobile applications using Flutter, React Native and solo android apps using Kotlin
+              </Typography>
+              <Typography 
+                sx={{ 
+                  fontFamily: 'Open Sans, sans-serif', 
+                  fontSize: '1.2rem', 
+                  textAlign: { xs: 'center', md: 'left' }
+                }}
+              >
+                ⚡ Creating application backend in Node, Express & Flask
+              </Typography>
+            </Box>
+          </Grid>
+        </Grid>
+      </Box>
+    </>
   );
 }
 
