@@ -59,10 +59,10 @@ function Home() {
 
             <Col md={5} style={{ paddingBottom: 20 }}>
               <img
-                src={homeLogo}
+                src="/gautam.jpg"
                 alt="home pic"
                 className="img-fluid"
-                style={{ maxHeight: "450px" }}
+                style={{ maxHeight: "450px",borderRadius:'50%',marginTop:'15px' }}
               />
             </Col>
           </Row>
