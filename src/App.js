@@ -43,7 +43,7 @@ function App() {
           <Route path="*" element={<Navigate to="/"/>} />
           <Route path="/effect" element={<Effect/>}/>
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   );
