@@ -1,9 +1,7 @@
 import React from "react";
-import Tilt from "react-parallax-tilt";
-import { AiFillGithub, AiOutlineTwitter, AiFillInstagram } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+
 import Slide from "react-reveal/Slide";
-import { Container, Grid, Typography, Box,Tooltip } from "@mui/material";
+import { Grid, Typography, Box,Tooltip } from "@mui/material";
 
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaNpm } from "react-icons/fa"; 
 

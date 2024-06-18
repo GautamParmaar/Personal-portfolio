@@ -8,6 +8,7 @@ import { GitHub, LinkedIn, YouTube, Google, Twitter, Facebook, Instagram } from 
 import { Box, IconButton } from "@mui/material";
 import useMediaQuery from '@mui/material/useMediaQuery';
 import "../CSS/Home.css"
+import About from "../About/About";
 
 
 function Home() {
@@ -74,6 +75,7 @@ function Home() {
       </Container>
     </Container>
     <Home2 />
+    <About/>
   </section>
   );
 }

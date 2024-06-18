@@ -454,7 +454,8 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  /* background-image: var(--section-background-color) !important; */
+  background-color: rgba(237,249,254,255);
 }
 
 .project-card {
@@ -538,7 +539,7 @@ button:focus {
   box-shadow: none !important;
 }
 .project-heading {
-  color: white !important;
+  color: black !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
@@ -552,7 +553,8 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  /* background-image: var(--section-background-color) !important; */
+  background-color: rgba(237,249,254,255);
   color: white !important;
 }
 
@@ -569,6 +571,7 @@ button:focus {
   box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
+  color: black;
 }
 
 @media (max-width: 767px) {
@@ -589,7 +592,7 @@ button:focus {
 
 .quote-card-view {
   border: none !important;
-  color: white !important;
+  color: black !important;
   background-color: transparent !important;
 }
 
@@ -604,6 +607,8 @@ button:focus {
     padding-top: 0 !important;
   }
 }
+
+
 /* --------- */
 /* Resume */
 /* --------- */

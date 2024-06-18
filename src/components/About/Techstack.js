@@ -1,68 +1,72 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { CgCPlusPlus } from "react-icons/cg";
-import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-  DiPython,
-  DiGit,
-  DiJava,
-} from "react-icons/di";
-import {
-  SiRedis,
-  SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
-} from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
+import { DiJavascript1, DiReact, DiNodejs, DiMongodb, DiGit, DiJava } from "react-icons/di";
+import { SiFirebase, SiExpress, SiHtml5, SiCss3, SiMysql } from "react-icons/si";
+import Tooltip from '@mui/material/Tooltip';
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <Tooltip title="C++" arrow>
+          <span><CgCPlusPlus /></span>
+        </Tooltip>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+        <Tooltip title="JavaScript" arrow>
+          <span><DiJavascript1 /></span>
+        </Tooltip>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
+        <Tooltip title="Node.js" arrow>
+          <span><DiNodejs /></span>
+        </Tooltip>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
+        <Tooltip title="React" arrow>
+          <span><DiReact /></span>
+        </Tooltip>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+        <Tooltip title="MongoDB" arrow>
+          <span><DiMongodb /></span>
+        </Tooltip>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
+        <Tooltip title="Git" arrow>
+          <span><DiGit /></span>
+        </Tooltip>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
+        <Tooltip title="Firebase" arrow>
+          <span><SiFirebase /></span>
+        </Tooltip>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
+        <Tooltip title="Java" arrow>
+          <span><DiJava /></span>
+        </Tooltip>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
+        <Tooltip title="ExpressJS" arrow>
+          <span><SiExpress /></span>
+        </Tooltip>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
+        <Tooltip title="HTML" arrow>
+          <span><SiHtml5 /></span>
+        </Tooltip>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
+        <Tooltip title="CSS" arrow>
+          <span><SiCss3 /></span>
+        </Tooltip>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+        <Tooltip title="MySQL" arrow>
+          <span><SiMysql /></span>
+        </Tooltip>
       </Col>
     </Row>
   );
