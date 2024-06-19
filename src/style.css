@@ -147,6 +147,8 @@ button:focus {
     font-size: 1.4rem !important;
     /* background-color: #181a27 !important; */
     background-color: rgba(237,249,254,255);
+    z-index: 1000;
+    top: 0;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;

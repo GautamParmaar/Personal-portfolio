@@ -20,7 +20,7 @@ function About() {
               paddingBottom: "50px",
             }}
           >
-            <Fade top duration={2000}>
+            <Fade left duration={2000}>
               <h1 style={{ fontSize: "2.1em", paddingBottom: "20px", color: 'black' }}>
                 Know Who <strong className="purple">I'M</strong>
               </h1>
@@ -32,28 +32,19 @@ function About() {
             style={{ paddingTop: "10px", paddingBottom: "50px" }}
             className="about-img"
           >
-            <Fade top duration={2000}>
+            <Fade right duration={2000}>
               <img src={laptopImg} alt="about" className="img-fluid" />
             </Fade>
           </Col>
         </Row>
-        <Fade top duration={2000}>
+        <Fade left duration={2000}>
           <h1 className="project-heading">
             <strong> Professional Skillset </strong>
           </h1>
         </Fade>
-        <Row>
-          <Col md={6}>
-            <Fade left duration={2000}>
-              <Techstack />
-            </Fade>
-          </Col>
-          <Col md={6}>
-            <Fade right duration={2000}>
-              <Techstack />
-            </Fade>
-          </Col>
-        </Row>
+        <Fade left duration={2000}>
+          <Techstack />
+        </Fade>
       </Container>
     </Container>
   );
