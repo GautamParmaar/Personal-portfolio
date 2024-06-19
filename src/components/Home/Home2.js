@@ -111,19 +111,9 @@ function Home2() {
                     marginBottom: { xs: '2rem', md: '1.5rem' }
                   }}
                 >
-                  ⚡ Building responsive website front end using React-Redux
+                  ⚡ Building responsive website front end using ReactJs.
                 </Typography>
-                <Typography
-                  sx={{
-                    fontFamily: 'Open Sans, sans-serif',
-                    fontSize: { xs: '1.4rem', md: '1.3rem' },
-                    marginBottom: '0.5rem',
-                    textAlign: { xs: 'center', md: 'left' },
-                    marginBottom: { xs: '2rem', md: '1.5rem' }
-                  }}
-                >
-                  ⚡ Developing mobile applications using Flutter, React Native and solo android apps using Kotlin
-                </Typography>
+                
                 <Typography
                   sx={{
                     fontFamily: 'Open Sans, sans-serif',
@@ -131,7 +121,7 @@ function Home2() {
                     textAlign: { xs: 'center', md: 'left' }
                   }}
                 >
-                  ⚡ Creating application backend in NodeJS, Express & Flask
+                  ⚡ Creating application backend in NodeJS & ExpressJs
                 </Typography>
               </Slide>
             </Box>

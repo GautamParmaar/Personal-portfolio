@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
@@ -9,6 +8,7 @@ import { Box, IconButton } from "@mui/material";
 import useMediaQuery from '@mui/material/useMediaQuery';
 import "../CSS/Home.css"
 import About from "../About/About";
+import Projects from "../Projects/Projects";
 
 
 function Home() {
@@ -76,6 +76,8 @@ function Home() {
     </Container>
     <Home2 />
     <About/>
+    <Projects/>
+
   </section>
   );
 }
