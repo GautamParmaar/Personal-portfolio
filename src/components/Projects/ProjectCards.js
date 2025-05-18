@@ -9,14 +9,15 @@ function ProjectCard({ imgPath, isBlog, title, description, ghLink, demoLink, im
     <Card className="project-card-view">
       <Card.Img variant="top" src={imgPath} className={imgClassName} />
       <Card.Body>
-        <Card.Title>{title}</Card.Title>
+        <Card.Title style={{ fontWeight: "bold" }}>{title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
           {description}
         </Card.Text>
-        <Button variant="primary" href={ghLink} target="_blank">
-          {" "}
-          GitHub{" "}
-        </Button>
+        {ghLink && (
+          <Button variant="primary" href={ghLink} target="_blank">
+            GitHub
+          </Button>
+        )}
         {"\n"}
         {"\n"}
 

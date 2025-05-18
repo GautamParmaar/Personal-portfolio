@@ -39,7 +39,7 @@
 
 /* NavBar.css */
 
-/* Set the font color to black */
+
 .nav-link {
   color: black !important;
   position: relative;
@@ -47,12 +47,10 @@
   display: inline-block;
 }
 
-/* Hover effect */
 .nav-link:hover {
-  color: black !important; /* Ensure the font color remains black on hover */
+  color: black !important; 
 }
 
-/* Create the blue square effect */
 .nav-link::after {
   content: '';
   position: absolute;
@@ -64,10 +62,17 @@
   transition: width 0.3s, height 0.3s;
 }
 
-/* Expand the blue square on hover */
 .nav-link:hover::after {
   width: 100%;
   height: 100%;
-  z-index: -1; /* Ensure the square is behind the text */
+  z-index: -1; 
+}
+
+.fixed-size-image {
+  width: 200px;
+  height: 300px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 10px auto; /* centers the image with spacing below */
 }
 

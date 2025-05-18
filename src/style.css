@@ -76,18 +76,23 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  /* background-color: #1b1a2ea9 !important; */
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
+  z-index: 1000; /* Ensure it's on top of other elements */
 }
 
 .navbar {
-  position: fixed !important;
+  position: sticky !important;
+  top: 0;
+  left: 0;
+  right: 0;
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
   font-size: 1.2rem !important;
   margin-top: 0px;
+  z-index: 1000; /* Ensure the navbar is on top of other elements */
+  background-color: rgba(237, 249, 254, 255);
 }
 
 .navbar-toggler {
@@ -115,7 +120,6 @@ button:focus {
 
 .navbar-toggler span:nth-child(1),
 .navbar-toggler span:nth-child(3) {
-  transition: transform 0.35s ease-in-out !important;
   transition: transform 0.35s ease-in-out !important;
 }
 
@@ -145,15 +149,13 @@ button:focus {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    /* background-color: #181a27 !important; */
-    background-color: rgba(237,249,254,255);
-    z-index: 1000;
-    top: 0;
+    background-color: rgba(237, 249, 254, 255);
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
   }
 }
+
 .navbar-brand {
   color: rgb(250, 250, 250) !important;
 }
@@ -260,16 +262,11 @@ button:focus {
 
 .home-section {
   position: relative;
-  z-index: -1;
-  /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg); */
-  background-position: top center;
-  background-repeat: no-repeat;
-  /* background-color: 'rgba(237,249,254,255)'; */
-  background-color:rgba(237,249,254,255);
-  
+  z-index: 0; /* Ensure the section is below the navbar */
+  background-color: rgba(237, 249, 254, 255);
   padding-bottom: 30px !important;
-  padding-top: 30px !important;
-  /* border: 2px solid black; */
+  /* padding-top: 30px !important; */
+  margin-top: -150px;
 }
 
 .home-content {
@@ -311,6 +308,11 @@ button:focus {
   .Typewriter__cursor {
     display: none !important;
   }
+
+  .home-section {
+   
+    margin-top: -200px;
+  }
 }
 
 .myAvtar {
@@ -324,6 +326,7 @@ button:focus {
     padding-bottom: 2em !important;
   }
 }
+
 
 .home-about-section {
   position: relative;
@@ -344,67 +347,41 @@ button:focus {
   text-align: left;
 }
 
-.home-about-social {
-  text-align: center !important;
-  padding-top: 25px;
-  color: white !important;
+/* Default styles for social icons */
+/* Home.css */
+.social-icons-large {
+  display: none;
 }
 
-.home-about-social-links {
-  justify-content: center !important;
-  padding-top: 15px !important;
-  display: inline-block !important;
-  position: relative !important;
-  padding-inline-start: 0 !important;
-}
-
-.home-social-icons {
-  position: relative !important;
-  display: inline-block !important;
-  width: 40px !important;
-  height: 40px !important;
-  text-align: center !important;
-  font-size: 1.2em !important;
-  line-height: 2em !important;
-  background: rgba(255, 255, 255, 0.972) !important;
-  border-radius: 50% !important;
-  transition: 0.5s !important;
-}
-
-.home-social-icons::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.social-icons-small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background: #68187a;
-  transition: 0.5s;
-  transform: scale(0.9);
-  z-index: -1;
+  margin-top: 20px;
 }
 
-.home-social-icons:hover::before {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px #801f95;
+@media (min-width: 769px) {
+  .social-icons-large {
+    display: flex;
+    top: 50%;
+    left: 27px;
+    transform: translateY(-50%);
+    flex-direction: row; /* Display icons in a row */
+    margin-left: 40px;
+  }
+
+  .social-icons-small {
+    display: none;
+  }
 }
 
-.home-social-icons:hover {
-  color: #87209e;
-  box-shadow: 0 0 5px #87209e;
-  text-shadow: 0 0 2px #87209e;
-}
 
-.social-icons {
-  display: inline-block !important;
-  padding-right: 15px;
-  padding-left: 15px;
-}
 
-.icon-colour {
-  color: #700c86 !important;
-}
+
+
+
+
 
 /* --------- */
 /* Footer */
@@ -454,11 +431,12 @@ button:focus {
 /* --------- */
 .project-section {
   position: relative !important;
-  padding-top: 150px !important;
+  padding-top: 100px !important;
   padding-bottom: 30px !important;
   /* background-image: var(--section-background-color) !important; */
   background-color: rgba(237,249,254,255);
   color: black;
+  margin-top: -90px;
 }
 
 .project-card {
@@ -554,11 +532,12 @@ button:focus {
 
 .about-section {
   position: relative !important;
-  padding-top: 150px !important;
+  padding-top: 30px !important;
   padding-bottom: 30px !important;
   /* background-image: var(--section-background-color) !important; */
   background-color: rgba(237,249,254,255);
   color: white !important;
+  margin-top: -30px;
 }
 
 .tech-icons {
@@ -623,6 +602,7 @@ button:focus {
   /* background-image: var(--section-background-color) !important; */
   background-color: rgba(237,249,254,255);
   color: white !important;
+  margin-top: -80px;
 }
 
 .resume {
@@ -791,3 +771,8 @@ button:focus {
   object-fit: cover;
 }
 
+
+/* home2 */
+/* .HomeMargin{
+  margin-top: -80px;
+} */

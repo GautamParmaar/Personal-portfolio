@@ -1,18 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+
 
 function Projects() {
   return (
     <Container fluid className="project-section">
-      <Particle />
+      {/* <Particle /> */}
       <Container>
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>
@@ -28,8 +22,25 @@ function Projects() {
               isBlog={false}
               title="E-Pharmacy Store"
               description="Developed an e-pharmacy store with an integrated payment gateway, featuring a user-friendly admin portal for efficient order management and product updates."
-              ghLink="https://github.com/soumyajit4419/Chatify"
+              ghLink="https://github.com/GautamParmaar/ecom3"
               demoLink="https://ecom2-c701c.web.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath="/davvlogo.png"
+              imgClassName="fixed-size-image"
+              isBlog={false}
+              title="School of Life Sciences College website"
+              description="Developed a responsive and user-friendly website for the School of Life Sciences, featuring sections for faculty, research, and admissions. Focused on clean design, intuitive navigation, and modern web technologies."
+              demoLink="https://sls.dauniv.ac.in/"
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                objectFit:'contain'
+              }}
             />
           </Col>
 
